@@ -364,6 +364,22 @@ ul.main-ul {
     background-position: top;
     background-repeat: no-repeat;
     width: 100%;
+    .carousel-item-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        span {
+            max-width: 300px;
+            font-family: 'Gilroy-Medium', sans-serif;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: #002967;
+            margin-top: 22px;
+        }
+    }
     &-item {
         border-radius: 2px;
         width: 300px;
@@ -388,6 +404,93 @@ ul.main-ul {
 
 .carousel-button-prev {
     margin-bottom: 10px;
+}
+
+.two-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .section-column {
+        width: 49%;
+        position: relative;
+    }
+}
+
+.content {
+    .caption {
+        margin-bottom: 0;
+    }
+    .text-block {
+        padding-left: 70px;
+        p {
+            margin: 20px 0;
+        }
+    }
+    &.gray {
+        background: rgba(0, 41, 103, 0.03);
+        border-radius: 2px;
+        padding: 38px 72px;
+        .text-block {
+            padding-left: 20px;
+        }
+    }
+}
+
+h3 {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-acc1;
+    margin-bottom: 15px;
+}
+
+
+.quote-block {
+    display: flex;
+    align-items: flex-start;
+    img {
+        margin-top: 20px;
+    }
+    p {
+        font-style: italic;
+    }
+}
+
+.img-block-wrap {
+    width: max-content;
+    position: relative;
+    .circle-gray {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(50%, 50%);
+        z-index: 1;
+    }
+}
+
+.img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 633px;
+    height: 348px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    z-index: 0;
+    img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+}
+footer {
+    background-image: url("../img/bg-footer.png");
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    background-position: right center;
 }
 
 @media (max-width: 1200px) {
